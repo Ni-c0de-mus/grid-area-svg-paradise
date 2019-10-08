@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Abel|Assistant|Cabin|Calligraffitti|Clicker+Script|Exo|Hind|Julius+Sans+One|Jura|Lexend+Tera|Maven+Pro|Norican|Pattaya|Poiret+One|Questrial|Ruda|Syncopate|Tajawal|Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel|Assistant|Cabin|Calligraffitti|Clicker+Script|Exo|Hind|Julius+Sans+One|Jura|Lexend+Tera|Maven+Pro|Norican|Pattaya|Poiret+One|Questrial|Ruda|Syncopate|Tajawal|Waiting+for+the+Sunrise|Allura|Caveat|Courgette|Handlee|Marck+Script|Mr+De+Haviland|Nothing+You+Could+Do|Pacifico|Parisienne|Tangerine|Yellowtail&display=swap');
+
 
 *,
 *::before,
@@ -28,6 +29,25 @@
 --calligraffitti: 'Calligraffitti', cursive;
 --sunrise: 'Waiting for the Sunrise', cursive;
 --clicker: 'Clicker Script', cursive;
+--pathway-gothic: 'Pathway Gothic One', sans-serif;
+--barlow-semi: 'Barlow Semi Condensed', sans-serif;
+--istok-web: 'Istok Web', sans-serif;
+--m-plus-1: 'M PLUS 1p', sans-serif;
+--sacremento: 'Sacramento', cursive;
+--chivo: 'Chivo', sans-serif;
+--yantramanav: 'Yantramanav', sans-serif;
+--hind-guntur: 'Hind Guntur', sans-serif;
+--gothic-a1: 'Gothic A1', sans-serif;
+--pacifico: 'Pacifico', cursive;
+--caveat: 'Caveat', cursive;
+--courgette: 'Courgette', cursive;
+--handlee: 'Handlee', cursive;
+--tangerine: 'Tangerine', cursive;
+--marck-script: 'Marck Script', cursive;
+--parisienne: 'Parisienne', cursive;
+--yellowtail: 'Yellowtail', cursive;
+--allura: 'Allura', cursive;
+
 
 
 --ruby-red: #A31621;
@@ -44,11 +64,18 @@
 --jet: #30332E;
 --moonstone: #62BBC1;
 --magenta: #EC058E;
+--majorelle-blue: #6564DB;
+--palatine-blue: #232ED1;
+
 }
 
 html {
     font-size: 10px;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -72,7 +99,7 @@ section {
 }
 
 body {
-    font-family: var(--hindi);
+    font-family: var(--handlee);
     background: var(--chinese-violet);
 }
 
@@ -84,7 +111,7 @@ header {
     height: 5rem;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .container {
@@ -109,7 +136,7 @@ nav {
 
 .menu__icons {
     font-size: 3.5rem;
-    color: var(--umber);
+    color: var(--palatine-blue);
     cursor: pointer;
 }
 
@@ -118,12 +145,12 @@ nav {
 }
 
 .nav__list {
-    position: fixed;
-    width: 25rem;
+    width: 26rem;
     height: 100vh;
+    position: fixed;
     top: 0;
     right: -26rem;
-    background: var(--umber);
+    background: var(--palatine-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,7 +169,7 @@ nav {
     left: 2rem;
 }
 
-.menu-item {
+.nav__item {
     margin: 1.5rem 0;
 }
 
@@ -152,3 +179,51 @@ nav {
     color: var(--chinese-violet);
 }
 
+/* Turbulence Image Effect */
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background: url('../img/sunset.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.main__message {
+    width: 100%;
+    max-width: 50rem;
+    color: var(--palatine-blue);
+    text-transform: uppercase;
+    transform: translateY(50%);
+}
+
+.main__message h1 {
+    font-family: var(--caveat);
+    font-size: 6rem;
+}
+
+.main__message h3 {
+    font-family: var(--caveat);
+    font-size: 2rem;
+}
+
+.main__message p {
+    text-transform: lowercase;
+}
+
+.btn {
+    background-color: var(--moonstone);
+    border-radius: 2rem;
+    color: var(--palatine-blue);
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+
+.btn:hover {
+    background-color: var(--palatine-blue);
+    color: var(--moonstone);
+}
