@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Caveat|Courgette|Handlee|Marck+Script|Mr+De+Haviland|Nothing+You+Could+Do|Pacifico|Parisienne|Tangerine|Yellowtail&display=swap');
+
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+:root {
+ --m-spring-bud: #CBE896;
+ --white: #FFFFFC;
+ --black-shadows: #BEB7A4;
+ --pumpkin: #FF7F11;
+ --red-ryb: #FF1B1C;
+ --queen-pink: #F1C8DB;
+ --opera-mauve: #B88C9E;
+ --wenge: #704C5E;
+ --spanish-grey: #88A09E;
+ --winter-green-dream: #558B6E;
+ --pathway-gothic: 'Pathway Gothic One', sans-serif;
+ --barlow-semi: 'Barlow Semi Condensed', sans-serif;
+ --istok-web: 'Istok Web', sans-serif;
+ --m-plus-1: 'M PLUS 1p', sans-serif;
+ --sacremento: 'Sacramento', cursive;
+ --chivo: 'Chivo', sans-serif;
+ --yantramanav: 'Yantramanav', sans-serif;
+ --hind-guntur: 'Hind Guntur', sans-serif;
+ --gothic-a1: 'Gothic A1', sans-serif;
+ --pacifico: 'Pacifico', cursive;
+--caveat: 'Caveat', cursive;
+--courgette: 'Courgette', cursive;
+--handlee: 'Handlee', cursive;
+--tangerine: 'Tangerine', cursive;
+--marck-script: 'Marck Script', cursive;
+--parisienne: 'Parisienne', cursive;
+--yellowtail: 'Yellowtail', cursive;
+--allura: 'Allura', cursive;
+--nothing: 'Nothing You Could Do', cursive;
+--haviland: 'Mr De Haviland', cursive;
+}
+
+ /* Universal Styles */
+
+html {
+ box-sizing: border-box;
+ font-size: 10px;
+}
+
+body {
+ background-color: var(--winter-green-dream);
+ color: var(--black-shadows);
+}
+
+a {
+ text-decoration: none;
+}
+
+ul {
+ list-style: none;
+}
+
+p {
+ font-size: 1.6rem;
+}
+
+img {
+ width: 100%;
+ max-width: 100%;
+ height: auto;
+}
+
+section {
+ padding: 5rem 0;
+}
+
+/* Header */
+
+.header {
+ width: 100%;
+ height: 5rem;
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: 1;
+}
+
+.container {
+ width: 100%;
+ max-width: 98rem;
+ padding: 0 1.5rem;
+ margin: 0 auto;
+}
+
+nav {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1rem 0;
+ border-bottom: 1px solid var(--wenge);
+}
+
+.nav__brand {
+ width: 3.5rem;
+}
+
+.menu__icons i {
+ font-size: 3.5rem;
+ color: var(--chinese-violet);
+ cursor: pointer;
+}
+
+.close i {
+ color: var(--chinese-violet);
+}
+
+.nav__list {
+ width: 25rem;
+ height: 100vh;
+ position: fixed;
+ top: 0;
+ right: -26rem;
+ background: var(--wenge);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ z-index: 1500;
+ transition: all 650ms ease-in-out;
+}
+
+.nav__list.active {
+ right: 0;
+}
+
+.close {
+ position: absolute;
+ top: 2.5rem;
+ left: 2.5rem;
+}
+
+.close {
+ position: absolute;
+ bottom: 2rem;
+ left: 2rem;
+}
+
+.nav__item {
+ margin: 1.5rem 0;
+}
+
+.nav__link {
+ font-size: 1.6rem;
+ text-transform: uppercase;
+ color: var(--chinese-violet);
+}
